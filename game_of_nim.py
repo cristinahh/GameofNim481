@@ -26,9 +26,6 @@ class GameOfNim(Game):
         return state.moves
     
     def result(self, state, move):
-        if move not in state.moves:
-            return state  # Illegal move has no effect
-        
         #create a copy of the board
         board = state.board.copy()
 
@@ -82,4 +79,4 @@ if __name__ == "__main__":
     else:
         print("MAX won the game")
 
-    print ("\n utility is ", utility)
+    # print ("\n utility is ", utility)
