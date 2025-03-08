@@ -7,7 +7,12 @@ class GameOfNim(Game):
     a list with number of objects in each row."""
 
     def __init__(self, board=[3,1]):
-        raise NotImplementedError
+        moves = []
+        for r, row in enumerate(board):
+            for n in range(1, row + 1):
+                moves.append((r, n))
+
+        self.initial = GameState(to_move ='MAX', utility=1, board=board, moves=moves)        
     
     def actions(self, state):
         """Legal moves are at least one object, all from the same row."""
