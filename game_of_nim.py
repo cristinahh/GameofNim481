@@ -51,7 +51,7 @@ class GameOfNim(Game):
     
     def terminal_test(self, state):
         """A state is terminal if there are no objects left"""
-        raise sum(state.board)
+        raise sum(state.board) == 0
     
     def display(self, state):
         board = state.board
