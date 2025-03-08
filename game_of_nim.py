@@ -50,11 +50,9 @@ class GameOfNim(Game):
     def utility(self, state, player):
         """Return the value to player; 1 for win, -1 for loss, 0 otherwise."""
         # return state.utility if player == 'MAX' else -state.utility
-        if not self.terminal_test(state):
-            return 0
-        elif player == 'MAX':
+        if player == "MAX":
             return 1
-        elif player == 'MIN':
+        elif player == "MIN":
             return -1
     
     def terminal_test(self, state):
