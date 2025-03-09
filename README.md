@@ -10,3 +10,6 @@ This is not a search game algorithm implementation, rather this is an extension 
 
 ##
 
+# Project Members:
+Cristina Hernandez
+Sinan Abdul-Hafiz
