@@ -255,11 +255,11 @@ class Game:
         state = self.initial
         while True:
             for player in players:
-                print("Next move: \n\n")
+                #print("Next move: \n\n")
                 move = player(self, state)
                 state = self.result(state, move)
-                print("Player: ", player)
-                print("Move: ", move)
+                #print("Player: ", player)
+                #print("Move: ", move)
                 if self.terminal_test(state):
                     self.display(state)
                     return self.utility(state, self.to_move(self.initial))
