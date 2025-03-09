@@ -62,7 +62,7 @@ class GameOfNim(Game):
         # return state.utility if player == 'MAX' else -state.utility
         '''if player == "MAX":
             return 1
-        elif player == "MIN":
+        elif player == "MIN":    
             return -1'''
     
     def terminal_test(self, state):
@@ -75,7 +75,7 @@ class GameOfNim(Game):
         print("board: ", board)
 
     def play_game(self, *players):
-        """Override the play_game method to display moves and state in the required format."""
+        """Ovverride play_game to display moves and state in the required format."""
         state = self.initial
         while True:
             for player in players:
