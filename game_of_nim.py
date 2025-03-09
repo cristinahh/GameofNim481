@@ -55,7 +55,7 @@ class GameOfNim(Game):
         if not self.terminal_test(state):
             return 0
 
-        if state.to_move != player:
+        if state.to_move == player:
             return 1
         else:
             return -1
